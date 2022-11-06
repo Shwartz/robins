@@ -64,7 +64,7 @@
   }
 
   .grid-content {
-    min-height: calc(100vh - 96px);
+    min-height: calc(100vh - 104px);
 
     .nav {
       border-right: 1px solid rgba(0, 0, 0, 0.25);
