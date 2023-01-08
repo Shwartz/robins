@@ -4,8 +4,11 @@ import * as dotenv from 'dotenv';
 
 dotenv.config();
 
-// Result is pushed as is from public folder to github pages
-const dev = process.env.APP_ENV === 'development';
+// Result is pushed as is from public folder to the GitHub pages
+/*const dev = process.env.APP_ENV === 'development';
+paths: {
+	base: dev ?  '' : '/robins',
+}*/
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -22,7 +25,7 @@ const config = {
 			fallback: 'null'
 		}),
 		paths: {
-			base: dev ?  '' : '/robins',
+			base: '',
 		}
 	}
 };
