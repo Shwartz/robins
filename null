@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <link rel="icon" href="/robins/favicon.png" />
+  <link rel="icon" href="/favicon.png" />
   <meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="/robins/_app/immutable/start-288728a6.js">
-		<link rel="modulepreload" href="/robins/_app/immutable/chunks/index-a8a08db8.js">
-		<link rel="modulepreload" href="/robins/_app/immutable/chunks/singletons-0dd66800.js">
+		<link rel="modulepreload" href="/_app/immutable/start-78746be3.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index-a8a08db8.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons-92e0511c.js">
 </head>
 <body class="app">
 <div class="wrap">
 		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "/robins/_app/immutable/start-288728a6.js";
+			import { start } from "/_app/immutable/start-78746be3.js";
 
 			start({
 				env: {},
 				hydrate: null,
-				paths: {"base":"/robins","assets":"/robins"},
+				paths: {"base":"","assets":""},
 				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
 				trailing_slash: "never"
 			});
