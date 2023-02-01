@@ -47,6 +47,10 @@
 		{ src: img21, alt: 'Image 21' }
 	];
 
+	let open = true;
+	function handleClick() {
+		open = !open;
+	}
 </script>
 
 <svelte:head>
@@ -56,7 +60,7 @@
 </svelte:head>
 
 <div class='wrap'>
-	<header>
+	<header class='intro'>
 		<h2 class='intro-title'>
 			<img src={robinsIcon} alt='Robins'/>
 			<span>Robins Svarcs</span>
@@ -66,12 +70,13 @@
 			the years, has worked on several music videos, advertisements, movie sets and events.</p>
 		<p>
 			<a href='https://www.instagram.com/cetracis' target='_blank' rel='noopener noreferrer'>Instagram</a> | <a
-			href='https://www.linkedin.com/in/cetracis/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>
+			href='https://www.linkedin.com/in/cetracis/' target='_blank' rel='noopener noreferrer'>LinkedIn</a> <br>
+			<button on:click={handleClick} type='button'>{open ? 'Close' : 'Open'} skills</button>
 		</p>
 	</header>
 
 	<section>
-		<h2>Work</h2>
+		<h2 class='intro-article'>Work</h2>
 		<div class='grid-images'>
 			<iframe width='100%' height='315' src='https://www.youtube.com/embed/NlOX1g9rcKc' title='YouTube video player'
 							frameborder='0'
@@ -97,10 +102,74 @@
 	<footer>
 		<p>© 2023 Robins Svarcs</p>
 	</footer>
+
+	<figure class="skills {open ? 'open' : ''}">
+		<header>
+			<button class='close' on:click={handleClick} type='button'>X</button>
+		</header>
+		<div class='content'>
+			<h3>Skills</h3>
+			<ul>
+				<li>I have experience working with XYZ cameras</li>
+				<li>Extensive usage of Photoshop..</li>
+
+			</ul>
+		</div>
+
+	</figure>
 </div>
 
 <style lang='scss'>
-  header {
+	.skills {
+		position: fixed;
+		top: 0;
+		left: 0;
+		max-width: 500px;
+		height: 100%;
+    background: #fdfbf9;
+		visibility: hidden;
+		opacity: 0;
+		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		-webkit-transition: -webkit-transform 0.45s ease, opacity 0.45s ease;
+		transition: transform 0.45s ease, opacity 0.45s ease;
+		z-index: 100;
+		border-right: 1px solid #ccc;
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+
+		&.open {
+			visibility: visible;
+			opacity: 1;
+			transform: translateY(0);
+			-webkit-transform: translateY(0);
+		}
+
+		header {
+			border-bottom: 1px solid #ccc;
+      text-align: right;
+		}
+
+		h3 {
+			text-align: center;
+			margin-top: 1em;
+		}
+
+		.content {
+			padding: 1em;
+      height: 100%;
+      overflow: auto;
+		}
+
+		ul {
+			margin-bottom: 8em;
+		}
+
+		.close {
+			margin: 1.2em;
+		}
+	}
+
+  .intro {
     max-width: 800px;
     text-align: center;
     margin: 5em auto 0;
@@ -129,6 +198,23 @@
     }
   }
 
+	button {
+		padding: 0.5em 1em;
+		background: #f25e22;
+		border: none;
+		border-radius: 0.5em;
+		color: #fff;
+		font-size: 0.8em;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		margin: 0.5em;
+
+		&:hover {
+      box-shadow: 0 0 0.8em 1px rgba(242, 94, 34, 0.8);
+		}
+
+	}
+
   .intro-title {
 		display: flex;
 		justify-content: center;
@@ -153,6 +239,10 @@
   section {
     margin: 6rem 0 0;
     padding: 1rem;
+
+		.intro-article {
+			font-size: 1.5em;
+    }
 
     h2 {
       text-align: center;
