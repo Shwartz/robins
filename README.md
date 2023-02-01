@@ -40,3 +40,6 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
+### Dev notes
+Fonts are from https://fonts.google.com/specimen/Lobster/tester?preview.text=Cinematographer&preview.text_type=custom
+

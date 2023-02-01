@@ -63,7 +63,7 @@ table {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #E1E1DE;
+    background: #FFF;
 }
 
 @media screen and (min-width: 800px) {
@@ -71,11 +71,12 @@ table {
 }
 
 h1 {
-    font-size: 2rem;
-    line-height: 2rem;
     font-weight: 400;
-    margin: 3rem 0 1em;
-    color: #333435;
+    margin: 1rem 0;
+}
+
+h2 {
+    color: #666;
 }
 
 h3 {
@@ -83,7 +84,7 @@ h3 {
     line-height: 1.8rem;
     font-weight: 400;
     margin: 3rem 0 1em;
-    color: #333435;
+    color: #666;
 }
 
 ul {
@@ -93,7 +94,7 @@ ul {
 }
 
 p, li {
-    color: #58595b;
+    color: #666;
     font-size: 1.2rem;
     line-height: 1.4;
     font-weight: lighter;
@@ -151,6 +152,6 @@ b {
 
 @media (min-width: 500px) {
     html {
-        font-size: 16px;
+        font-size: 1em;
     }
 }
