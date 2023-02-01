@@ -47,7 +47,7 @@
 		{ src: img21, alt: 'Image 21' }
 	];
 
-	let open = true;
+	let open = false;
 	function handleClick() {
 		open = !open;
 	}
