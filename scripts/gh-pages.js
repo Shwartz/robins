@@ -13,7 +13,7 @@ ghpages.publish(
   'public',
   {
     branch: 'gh-pages',
-    silent: true,
+    silent: false,
     repo: 'https://' + process.env.GITHUB_TOKEN + '@github.com/Shwartz/robins.git',
     user: {
       name: 'Andris Svarcs',
