@@ -110,9 +110,14 @@
 		<div class='content'>
 			<h3>Skills</h3>
 			<ul>
-				<li>I have experience working with XYZ cameras</li>
-				<li>Extensive usage of Photoshop..</li>
-
+				<li>Camera works</li>
+				<li>Lightning</li>
+				<li>Video editing</li>
+				<li>Producing/Planning</li>
+				<li>Adobe Suite</li>
+				<li>Social Media Managing</li>
+				<li>3d Blender</li>
+				<li>Motion Graphics</li>
 			</ul>
 		</div>
 
@@ -125,6 +130,7 @@
 		top: 0;
 		left: 0;
 		max-width: 500px;
+		width: 100%;
 		height: 100%;
     background: #fdfbf9;
 		visibility: hidden;
