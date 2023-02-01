@@ -4,15 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="icon" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="/_app/immutable/start-78746be3.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/index-a8a08db8.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/singletons-92e0511c.js">
+		<link rel="modulepreload" href="/_app/immutable/start-7dd1cf05.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index-671c4b5f.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons-9fe4693b.js">
 </head>
 <body class="app">
 <div class="wrap">
 		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "/_app/immutable/start-78746be3.js";
+			import { start } from "/_app/immutable/start-7dd1cf05.js";
 
 			start({
 				env: {},
